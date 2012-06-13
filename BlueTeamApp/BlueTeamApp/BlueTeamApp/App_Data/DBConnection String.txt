@@ -1,0 +1,3 @@
+<add name="PermissionDBContext"
+         connectionString="Data Source=|DataDirectory|Permissions.mdf"
+         providerName="System.Data.SqlServer"/>
