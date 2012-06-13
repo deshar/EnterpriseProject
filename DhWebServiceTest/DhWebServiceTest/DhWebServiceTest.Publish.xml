@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="D:\EnterpriseRepo\DHTestWebService" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="bin/DhWebServiceTest.pdb" publishTime="06/12/2012 16:28:19" />
+    <file relUrl="bin/DhWebServiceTest.dll" publishTime="06/12/2012 16:28:19" />
+    <file relUrl="Service1.asmx" publishTime="06/12/2012 16:17:15" />
+    <file relUrl="Web.config" publishTime="06/12/2012 16:43:16" />
+  </publishProfile>
+</publishData>
