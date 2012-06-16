@@ -1,0 +1,11 @@
+Application Template created with views for
+
+ - Home
+ - About
+ - Login
+ - Logout
+
+Upon running the application, the user is greeted with a login screen.
+This login is authenticated through a user database and is validated on the client and server.
+The login code is working at present with all pages blocked to unauthenticated users.
+Layout is basic at moment and just needs some styling using css to customize it to our needs.
