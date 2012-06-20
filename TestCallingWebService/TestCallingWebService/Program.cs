@@ -13,7 +13,7 @@ namespace TestCallingWebService
             Service1 webservice = new Service1();
             string srt = webservice.simpleMethod("This could be a BLOB Storage Service");
             Console.WriteLine(srt);
-            Console.WriteLine(webservice.anotherSimpleMethod(4, 11));
+            Console.WriteLine(webservice.anotherSimpleMethod(5,25));
             Console.ReadLine();
         }
     }

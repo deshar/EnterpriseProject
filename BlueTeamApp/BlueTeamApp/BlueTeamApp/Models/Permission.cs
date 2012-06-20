@@ -47,7 +47,7 @@ namespace BlueTeamApp.Models
         public string wasteLicReqd            { get; set; }
         public string statNoticesApply        { get; set; }
         public string prePlanConsult          { get; set; }
-        public DateTime     prePlanDate       { get; set; }
+        public DateTime prePlanDate           { get; set; }
         public string respDCC                 { get; set; }
         public string socHousingExempt        { get; set; }
         public string waterSupplyType         { get; set; }
