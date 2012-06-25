@@ -1,0 +1,27 @@
+﻿@model IEnumerable<Plan1.Models.DHBlob>
+
+@{
+    ViewBag.Title = "Drawings";
+}
+
+
+
+
+<table>
+    <tr>
+        <th>
+            Drawing List
+        </th>
+       
+    </tr>
+
+    @foreach (var i in Model)
+    {
+    <tr>
+        <td>
+             <a href="@i.blobURI ">@i.blobURI</a>
+        </td>
+        
+    </tr>
+    }
+</table>
