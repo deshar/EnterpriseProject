@@ -1,0 +1,27 @@
+﻿@model IEnumerable<Plan1.Models.DHBlob>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+
+
+<table>
+    <tr>
+        <th>
+            Drawing List
+        </th>
+       
+    </tr>
+
+@foreach (var blobItem in Model)
+{
+    <tr>
+        <td>
+             @Html.DisplayFor(modelItem => blobItem.URI)
+        </td>
+        
+    </tr>
+}
+</table>
