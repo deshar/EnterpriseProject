@@ -1,0 +1,83 @@
+﻿@model IEnumerable<Plan1.Models.Permission>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            Permission Type
+        </th>
+        <th>
+            Postal Address
+        </th>
+        <th>
+            Applicant Name
+        </th>
+        <th>
+            Application Date
+        </th>
+        <th>
+            Architect's Name
+        </th>
+        <th>
+            Description of Development
+        </th>
+        <th>
+            Owner's Name
+        </th>
+        <th>
+            Address of Retained Building
+        </th>
+        <th>
+            Architect's Address
+        </th>
+    </tr>
+
+
+@foreach (var item in Model)
+{
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.permType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.postalAddr)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.appName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.appDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.archName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.devDesc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ownerName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.retBldAddr)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.addrDrawer)
+        </td>
+        <td>
+            @Html.ActionLink("Manage Drawings", "Create", "DHBlob", new { id = item.postalAddr }, null) |
+            @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+        </td>
+    </tr>
+}
+
+</table>
