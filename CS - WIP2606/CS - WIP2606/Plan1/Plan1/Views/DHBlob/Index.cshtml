@@ -1,0 +1,41 @@
+﻿@model IEnumerable<Plan1.Models.DHBlob>
+
+@{
+    ViewBag.Title = "Drawings";
+}
+
+
+
+<table>
+    <tr>
+        <th>
+            Drawing List
+        </th>
+       
+    </tr>
+
+    @foreach (var i in Model)
+    {
+    <tr>
+        <td>
+             <a href="@i.blobURI ">@i.blobURI</a>             
+        
+            @Html.ActionLink("Delete", "Delete", "DHBlob", new { uri = i.blobURI }, null )
+        </td>
+        
+    </tr>
+    }
+
+    <tr>
+        <th>
+            Add a Drawing
+        </th>
+       
+    </tr>
+</table>
+
+    @using (Html.BeginForm("GetFname", "DHBlob", FormMethod.Post, new { enctype = "multipart/form-data" })) 
+    { 
+    <input type="file" name="file" /> 
+    <input type="submit" value="OK" /> 
+    } 
