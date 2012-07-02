@@ -1,0 +1,64 @@
+﻿@model Plan1.Models.Permission
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>Permission</legend>
+
+    
+    <div class="display-label">Permission Type</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.permType)
+    </div>
+
+    <div class="display-label">Postal Address</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.postalAddr)
+    </div>
+
+    <div class="display-label">Applicant Name</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.appName)
+    </div>
+
+    <div class="display-label">Application Date</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.appDate)
+    </div>
+
+    <div class="display-label">Architect's Name</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.archName)
+    </div>
+
+    <div class="display-label">Description of Development</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.devDesc)
+    </div>
+
+    <div class="display-label">Owner's Name</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ownerName)
+    </div>
+
+    <div class="display-label">Address of Retained Building</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.retBldAddr)
+    </div>
+
+    <div class="display-label">Architect's Address</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.addrDrawer)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

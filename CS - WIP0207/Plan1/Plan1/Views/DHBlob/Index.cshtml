@@ -1,0 +1,48 @@
+﻿@model Plan1.Models.ContainerDHBlobs
+
+@{
+    ViewBag.Title = "Drawings";
+}
+
+
+
+<table>
+    <tr>
+        <th>
+            <strong>Drawing List</strong>
+        </th>
+        <th>
+            Action
+        </th>       
+    </tr>
+
+    @foreach (var i in Model.Blobs)
+    {
+    <tr>
+        <td>
+             <a href="@i.blobURI ">@i.blobURI</a>             
+        </td>
+        <td>
+            @Html.ActionLink("Delete", "Delete", "DHBlob", new { uri = i.blobURI }, null )|
+        </td>
+        
+    </tr>
+    }
+
+    <tr>
+        <th>
+            <strong>Add a Drawing</strong>
+        </th>
+       
+    </tr>
+
+ </table>   
+    
+    @using (Html.BeginForm("GetFname", "DHBlob", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    { 
+    <input type="file" name="file" />
+    <input type="hidden" name="containerId" value="@Model.id" />    
+    <input type="submit" value="OK" /> 
+    }
+    
+    
