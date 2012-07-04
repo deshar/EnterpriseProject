@@ -1,0 +1,22 @@
+﻿@model Plan1.Models.DHMailResult
+
+@{
+    ViewBag.Title = "Email Status";
+}
+
+<html>
+<head><title></title></head>
+<body>
+
+@if (Model == null)
+{    
+    <p>The document link has been emailed to : </p><p><strong>Surveyor</strong></p>
+}
+else
+{
+    <p>The email was not sent - Error Code:</p>
+    <p><em>@Model.errMessage</em></p>
+}         
+    
+</body>
+</html>
