@@ -1,0 +1,28 @@
+Models
+
+Planning Application class 
+
+Properties
+
+Type of application
+Name
+Address
+Town
+County
+Telephone
+Email
+Legal Interest (or estate in site)
+Demolition (Yes/no)
+Total Site Area
+Floor Area
+Protected Structure
+Previous Planning Applications
+Archaeological Interest Zone (Yes/No)
+Environmental Impact Statement (Required Yes/No)
+Major Accident Regulations (Apply Yes/No)
+Waste Licence (Requirement Yes/No)
+Statutory notices (Apply Yes/No)
+Water Supply (Source)
+Address of person responsible for drawings
+
+This application should only be accessible to registered users.
