@@ -1,0 +1,79 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<style type="text/css">
+#container
+{
+	margin: 0 auto;
+	width: 1000px;
+	background: #fff;
+}
+
+#content-container
+{
+	float: left;
+	width: 1000px;
+	background: #fff url(/wp-content/uploads/layout-two-fixed-background.gif) repeat-y 100% 0;
+}
+
+#content
+{
+	clear: left;
+	float: left;
+	width: 560px;
+	padding: 20px 0;
+	margin: 0 0 0 30px;
+	display: inline;
+}
+
+#content h2 { margin: 0; }
+
+#aside
+{
+	float: right;
+	width: 240px;
+	padding: 20px 0;
+	margin: 0 20px 0 0;
+	display: inline;
+}
+
+#aside h3 { margin: 0; }
+
+
+</style>
+
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>@ViewBag.Title.</h1>
+                
+            </hgroup>
+            <p>Our first planning application site
+            </p>
+            <div id="container">
+
+               <div id="content-container">
+		<div id="content">
+		<img src="images/approved.bmp" />
+        <img src="images/planning.bmp" />
+		</div>
+		<div id="aside">
+			<h3>
+				Aside heading
+			</h3>
+			<p>
+				Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan.
+			</p>
+		</div>
+        </div>
+        </div>
+         
+            
+    </section>
+    
+    
+   
+}
+
+

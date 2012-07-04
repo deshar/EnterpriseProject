@@ -1,0 +1,83 @@
+﻿@model PlanningForm.Models.PlanningApplication
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create new planning application</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>PlanningApplication</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Apptype)
+            <br>Permission, Outline Permission, Retention Permission, Permission on foot of Outline Permission<br>
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Apptype)
+            @Html.ValidationMessageFor(model => model.Apptype)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.name)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.name)
+            @Html.ValidationMessageFor(model => model.name)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.address)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.address)
+            @Html.ValidationMessageFor(model => model.address)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.town)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.town)
+            @Html.ValidationMessageFor(model => model.town)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.email)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.email)
+            @Html.ValidationMessageFor(model => model.email)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.telephone)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.telephone)
+            @Html.ValidationMessageFor(model => model.telephone)
+        </div>
+         <div class="editor-label">
+          @Html.LabelFor(model => model.LegalInterest)
+            <strong>Or Estate in Site</strong>
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.LegalInterest)
+            @Html.ValidationMessageFor(model => model.LegalInterest)
+        </div>
+
+       
+                 <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
