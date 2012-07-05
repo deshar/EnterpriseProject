@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="Plan1.Azure" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="1" osVersion="*" schemaVersion="2012-05.1.7">
+  <Role name="Plan1">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="BlobConnectionString" value="BlobEndpoint=http://blueteam.blob.core.windows.net/;AccountName=blueteam;AccountKey=UFZjiiAor5xTb9TT9OOXyd+LfzDV8BMOAYLeU9/O0vrYiALby02Fv7rRbKwA6glQooZYoBDBV8K44040dNyiXg==" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>
