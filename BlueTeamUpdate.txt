@@ -1,6 +1,0 @@
-Progress:
-
-Model Updated
-Views added
-Search results filtered
-Various different roles implemented in app
