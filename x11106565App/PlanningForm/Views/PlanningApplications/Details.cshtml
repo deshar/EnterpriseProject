@@ -1,0 +1,55 @@
+﻿@model PlanningForm.Models.PlanningApplication
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>PlanningApplication</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Apptype)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Apptype)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.address)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.address)
+    </div>
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.town)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.town)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.email)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.email)
+    </div>
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.LegalInterest)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.LegalInterest)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

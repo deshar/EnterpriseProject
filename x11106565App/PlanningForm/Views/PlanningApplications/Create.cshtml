@@ -1,0 +1,161 @@
+﻿@model PlanningForm.Models.PlanningApplication
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create new planning application</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>PlanningApplication</legend>
+
+        <h2><u>Personal Information</u></h2>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.name)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.name)
+            @Html.ValidationMessageFor(model => model.name)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.address)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.address)
+            @Html.ValidationMessageFor(model => model.address)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.town)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.town)
+            @Html.ValidationMessageFor(model => model.town)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.email)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.email)
+            @Html.ValidationMessageFor(model => model.email)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.telephone)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.telephone)
+            @Html.ValidationMessageFor(model => model.telephone)
+        </div>
+        <hr />
+         <div class="editor-label">
+            <strong>Application Type</strong>
+            <br><strong>Permission, Outline Permission, Retention Permission, Permission on foot of Outline Permission</strong><br>
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Apptype)
+            @Html.ValidationMessageFor(model => model.Apptype)
+        </div>
+
+        
+         <div class="editor-label">
+          @Html.LabelFor(model => model.LegalInterest)
+            <strong>Or Estate in Site</strong>
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.LegalInterest)
+            @Html.ValidationMessageFor(model => model.LegalInterest)
+        </div>
+        <div class="editor-label">
+         
+            <strong>Does the proposal involve demolition. If Yes then Specify</strong>
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Demolition)
+            @Html.ValidationMessageFor(model => model.Demolition)
+        </div>
+        <hr />
+        <div class="editor-label">
+        <h2><u>Area Size</u></h2>
+          @Html.LabelFor(model => model.TotalSiteArea)
+            <strong>m2 (metres squared)</strong>
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.TotalSiteArea)
+            @Html.ValidationMessageFor(model => model.TotalSiteArea)
+        </div>
+        <div class="editor-label">
+          @Html.LabelFor(model => model.FloorArea)
+            <strong>Of buildings proposed to be retained within site (m2)</strong>
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.FloorArea)
+            @Html.ValidationMessageFor(model => model.FloorArea)
+        </div>
+         <div class="editor-label">
+         
+            <strong>Floor area of new buildings within development(m2)</strong>
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.FloorAreaofNewBuildings)
+            @Html.ValidationMessageFor(model => model.FloorAreaofNewBuildings)
+        </div>
+        <div class="editor-label">
+         
+            <strong>Total Floor area of proposed development (i.e. new and retained)(m2)</strong>
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ProposedDevelopmentTotalFloorArea)
+            @Html.ValidationMessageFor(model => model.ProposedDevelopmentTotalFloorArea)
+        </div>
+        <hr />
+        <div class="editor-label">
+         
+            <strong>Is this site within a zone of archaeological interest? (Yes/No)</strong>
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ArchaeologicalInterestZone)
+            @Html.ValidationMessageFor(model => model.ArchaeologicalInterestZone)
+        </div>
+         <div class="editor-label">
+         
+            <strong>Does the development comprise, or is it for the purpose of an activity in relation to which a Waste Licence is required? (Yes/No)</strong>
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.WasteLicenceRequired)
+            @Html.ValidationMessageFor(model => model.WasteLicenceRequired)
+        </div>
+        <div class="editor-label">
+        @Html.LabelFor(model => model.WaterSupplySource)
+         <strong>Existing connection, New mains connection, Private well, Use of grey or recycled water</strong>
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.WaterSupplySource)
+            @Html.ValidationMessageFor(model => model.WaterSupplySource)
+        </div>
+        <div class="editor-label">
+         
+            <strong>Date</strong>
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ApplicationDate)
+            @Html.ValidationMessageFor(model => model.ApplicationDate)
+        </div>
+
+       
+                 <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
