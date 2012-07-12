@@ -1,0 +1,22 @@
+PlanApp Project
+
+All the files (including the project report) needed to run the app are in the PlanApp_RC directory on GitHub.
+A selection of drawings are also included - the Drawings directory needs to be copied to the C drive.
+
+The app takes in basic data for an application for planning permission.
+It also collects all drawings related to that application and stores them in the Microsoft Azure Cloud.
+
+It uses the BLOB (binary large object) storage facility of Azure to store the drawings. 
+
+The drawings need to be copied to a directory on the C drive called: Drawings.
+
+The app uses the postal address to create the container name to hold the individual drawing files.
+
+
+
+Unit Test:
+
+The app conatins 9 unit tests one of which is a data driven unit test which will read from the 
+Permission database. The path to the dadbase will need to be edited in the UnitTest1.cs file in
+the TestPlan1 project (line 66 which starts with [DataSource(...
+
