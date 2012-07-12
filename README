@@ -1,7 +1,7 @@
 PlanApp Project
 
 All the files (including the project report) needed to run the app are in the PlanApp_RC directory on GitHub.
-A selection of drawings are also included - the Drawings directory needs to be copied to the C drive.
+A selection of drawings is also included - the Drawings directory needs to be copied to the C drive.
 
 The app takes in basic data for an application for planning permission.
 It also collects all drawings related to that application and stores them in the Microsoft Azure Cloud.
