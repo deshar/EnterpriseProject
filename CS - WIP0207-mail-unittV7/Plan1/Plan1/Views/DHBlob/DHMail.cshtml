@@ -1,0 +1,21 @@
+﻿@model Plan1.Models.DHMailResult
+
+@{
+    ViewBag.Title = "Email Status";
+}
+
+@if (Model.errMessage == "")
+{
+      <p>The document link has been emailed to : @Model.superV</p>
+}
+else
+{
+        <p><b>The email was <em>not</em> sent.</b></p>
+        <p>Please check that the system has the 
+           correct settings for the SMTP server name, a user name, 
+           a password, and a "from" address.
+        </p>
+        
+            <p>The following error was reported:</p>
+            <p><em>@Model.errMessage</em></p>
+}    
