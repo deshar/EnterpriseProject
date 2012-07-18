@@ -17,6 +17,6 @@ The app uses the postal address to create the container name to hold the individ
 Unit Test:
 
 The app contains 9 unit tests one of which is a data driven unit test which will read from the 
-Permission database. The path to the dadbase will need to be edited in the UnitTest1.cs file in
+Permission database. The path to the database will need to be edited in the UnitTest1.cs file in
 the TestPlan1 project (line 66 which starts with [DataSource(...
 
